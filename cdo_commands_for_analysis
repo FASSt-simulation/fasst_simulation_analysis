@@ -21,6 +21,8 @@ cdo -timmean -yearsum -setrtoc2,75,78,1,0  -selmon,9,10,11,12,1,2,3 -selyear,196
 cdo mergetime *.nc outfile
 cdo cat *.cat outfile
 
+!select variable
+cdo selvar,FSH infile outfile
 
 !* * * * * * * * * * * * * * * * * * * * * * * * *
 !Keep addding/Leave comments
